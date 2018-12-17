@@ -34,18 +34,18 @@ self.end_with?("?")
 self.end_with?("!")
   end
 
-  def count_sentences
-    self.split(/\.|\?|\!/).delete_if {|w| w.size < 2}.size
-  end
-end
-  
-#   def count_sentences # => returns # of sentences in a string 
-# # split the string on any puncttuation to get each elements 
-# #count the numbeer of elements 
-#     self.split(/\?|\.|!/).delete_if do |element|
-#       element < 2.size  
-#     end 
-#     # splits the string at every ending punctuation into an array and then gets the size of the array
-#   end 
+#   def count_sentences
+#     self.split(/\.|\?|\!/).delete_if {|element| element.size < 2}.size
 #   end
+# end
+  
+  def count_sentences # => returns # of sentences in a string 
+# split the string on any puncttuation to get each elements 
+#count the numbeer of elements 
+    self.split(/\?|\.|!/).size delete_if do |element|
+      element.size < 2
+    end 
+    # splits the string at every ending punctuation into an array and then gets the size of the array
+  end 
+  end
 
