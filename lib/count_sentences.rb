@@ -35,10 +35,9 @@ self.end_with?("!")
   end
 
   def count_sentences # => returns # of sentences in a string 
-self.split("").count # => split the string on any puncttuation to get each elements 
+self.split("").delete_if {|element| element.size < 2}.size count # => split the string on any puncttuation to get each elements 
 #count the numbeer of elements 
-self.count_sentences.compact
 
   end
-end 
-end 
+end
+  
