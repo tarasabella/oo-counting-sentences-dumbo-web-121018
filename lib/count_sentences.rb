@@ -42,6 +42,6 @@ self.end_with?("!")
       element.size < 2}.size
     end 
     # splits the string at every ending punctuation into an array and then gets the size of the array
- 
+# Deletes every element of self for which block evaluates to true.
   end
 
