@@ -41,6 +41,6 @@ self.end_with?("!")
       element < 2 
     end 
     # splits the string at every ending punctuation into an array and then gets the size of the array
-    
+  end 
   end
 
