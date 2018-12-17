@@ -40,10 +40,10 @@ self.end_with?("!")
 #count the numbeer of elements 
     self.split(/\?|\.|!/).delete_if {|element|
       element.size < 2}.size
-    end 
     #.split(/\?|.!/) 
     # splits the string at every ending punctuation into an array 
 # .delete_if {|value| value < 3} Deletes every element of self for which block evaluates to true.
 #and then gets the size of the array
   end
+end 
 
