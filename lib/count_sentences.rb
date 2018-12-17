@@ -34,11 +34,7 @@ self.end_with?("?")
 self.end_with?("!")
   end
 
-#   def count_sentences
-#     self.split(/\.|\?|\!/).delete_if {|element| element.size < 2}.size
-#   end
-# end
-  
+
   def count_sentences # => returns # of sentences in a string 
 # split the string on any puncttuation to get each elements 
 #count the numbeer of elements 
