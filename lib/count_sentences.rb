@@ -41,8 +41,9 @@ self.end_with?("!")
     self.split(/\?|\.|!/).delete_if {|element|
       element.size < 2}.size
     end 
-    #split the string on any punctuation to get each elements 
-    # splits the string at every ending punctuation into an array and then gets the size of the array
+    #.split(/\?|.!/) 
+    # splits the string at every ending punctuation into an array 
 # .delete_if {|value| value < 3} Deletes every element of self for which block evaluates to true.
+and then gets the size of the array
   end
 
